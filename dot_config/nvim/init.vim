@@ -51,7 +51,7 @@ set clipboard=unnamedplus " yank to system clipboard
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Font setting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set guifont=JetBrainsMono\ Nerd\ Font:h12
+set guifont=JetBrainsMono\ Nerd\ Font:h11
 
 
 " 打开文件自动定位到最后编辑的位置
@@ -81,6 +81,10 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'romgrk/barbar.nvim'
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'mechatroner/rainbow_csv'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'easymotion/vim-easymotion'
+Plug 'junegunn/fzf.vim'
+Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 " airline settings
@@ -295,3 +299,16 @@ nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
 " Other:
 " :BarbarEnable - enables barbar (enabled by default)
 " :BarbarDisable - very bad command, should never be used
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" EasyMotion
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:EasyMotion_smartcase = 1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Which key 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:mapleader = "\<Space>"
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
