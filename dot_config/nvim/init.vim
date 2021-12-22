@@ -1,6 +1,5 @@
 "set t_Co=256              " force 256 colors on the terminal
 set termguicolors
-colorscheme neodark
 filetype on
 filetype plugin on
 syntax enable             " open systax highlight function
@@ -86,6 +85,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf.vim'
 Plug 'liuchengxu/vim-which-key'
 call plug#end()
+
+colorscheme neodark
 
 " airline settings
 let g:airline_theme = 'neodark'
