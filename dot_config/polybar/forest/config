@@ -77,9 +77,9 @@ font-2 = "feather:size=12;3"
 ; font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 ; font-2 = siji:pixelsize=10;1
 
-modules-left = launcher sep i3 sep cpu memory filesystem
-modules-center = date
-modules-right = battery sep volume brightness sep powermenu sep
+modules-left = powermenu sep i3 sep cpu memory filesystem
+modules-center = launcher sep date
+modules-right = battery sep volume brightness sep
 
 tray-position = right
 tray-padding = 2
