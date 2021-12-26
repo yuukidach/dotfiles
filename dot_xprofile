@@ -2,4 +2,6 @@ export QT_IM_MODULE=fcitx5
 export GTK_MODULE=fcitx5
 export XMODIFIERS="@im=fcitx5"
 fcitx5 &
+
+# use to close beep sound
 xset -b
